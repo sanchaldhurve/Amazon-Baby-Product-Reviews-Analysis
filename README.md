@@ -1,59 +1,51 @@
-# Amazon Baby Product Reviews – AI Sentiment Analysis  
+# Amazon Baby Product Reviews – AI Sentiment Analysis
 
-**Expertise:** Python, NLP, AI (RoBERTa), Sentiment Analysis, Data Analysis, Visualization  
+**Expertise:** Python, NLP, AI (RoBERTa), Sentiment Analysis, Data Analysis, Visualization
 
----
+## Project Overview
+This project applies AI-based sentiment analysis to Amazon Baby product reviews (~183K records).  
+The goal is to understand how AI models capture customer sentiment compared to star ratings and simpler text-based methods.
 
-## Project Overview  
-This project applies **AI-based sentiment analysis** to Amazon Baby product reviews (~183K records).  
-The goal was to understand how well AI models capture customer sentiment compared to star ratings and simpler text-based methods.  
-
-Key steps included:  
+### Key Steps:
 - Data cleaning and preprocessing (~183K reviews)  
-- Sampling 2,000 reviews for faster model testing  
-- Applying **RoBERTa transformer model** for sentiment classification (Positive / Negative / Neutral)  
+- Sampling 2,000 reviews for model testing  
+- Applying RoBERTa transformer for sentiment classification (Positive / Negative / Neutral)  
 - Comparing AI sentiment vs original ratings using evaluation metrics  
 - Generating visualizations to highlight sentiment distribution and review insights  
 
----
+### Key Findings
+- AI Sentiment Model (RoBERTa) performed better on negative reviews than text-based approaches  
+- Text-based methods captured positive reviews more accurately  
+- Neutral sentiment remains challenging for both methods  
 
-## Key Findings  
-- **AI Sentiment Model (RoBERTa)** performed better on **negative reviews** than text-based approaches  
-- **Text-based methods** captured **positive reviews** more accurately  
-- Both approaches **struggled with neutral sentiment** (often misclassified)  
+**Agreement with star ratings:**
 
-Example agreement with star ratings:  
-- Positive → **91% (AI) vs 96% (Text-based)**  
-- Negative → **71% (AI) vs 42% (Text-based)**  
-- Neutral → **21% (AI) vs 09% (Text-based)**  
+| Sentiment | AI  | Text-based |
+|-----------|-----|------------|
+| Positive  | 91% | 96%        |
+| Negative  | 71% | 42%        |
+| Neutral   | 21% | 09%        |
 
----
+## Tools & Libraries
+- Python (Pandas, NumPy, Scikit-learn)  
+- HuggingFace Transformers (RoBERTa)  
+- Seaborn / Matplotlib for visualization  
+- **Google Colab** for cloud execution and running AI models  
 
-##  Tools & Libraries  
-- **Python** (Pandas, NumPy, Scikit-learn)  
-- **HuggingFace Transformers** (RoBERTa model)  
-- **Seaborn / Matplotlib** for visualization  
-- **Google Colab** for cloud execution  
-
----
-
-## Files in This Repo  
-- `AI_Sentiment_BabyReviews.ipynb` → Jupyter Notebook for AI Sentiment Analysis  
-- `Sanchal_Amazon_Sentiment.csv` → Processed sample results (2,000 reviews)  
+## Files in This Repo
+- `AI_Sentiment_BabyReviews.ipynb` → Jupyter Notebook for AI Sentiment Analysis (developed in **Google Colab**)  
+- `Sanchal_Amazon_Sentiment.csv` → Sample processed results (2,000 reviews)  
 - `requirements.txt` → Python dependencies  
 
----
+## Key Learning
+- AI models capture nuance better than simple text-based methods but still struggle with neutral reviews  
+- Text-based methods are simpler but limited in capturing complexity  
+- Validating AI predictions against ground truth (ratings) is crucial  
 
-## Key Learning  
-This project demonstrated the importance of **validating AI models against ground truth** (ratings) rather than assuming predictions are reliable.  
-- Text-based methods = simple but limited nuance  
-- AI = better at complexity but still fails on neutral tone  
-- Neutral classification remains a challenge in sentiment analysis  
-
----
-
-## Next Steps  
+## Next Steps
 - Expand model testing to the full dataset (~183K reviews)  
 - Compare with other transformer models (BERT, DistilBERT)  
-- Try different preprocessing techniques for better neutral detection  
+- Experiment with preprocessing techniques to improve neutral sentiment detection  
 
+## Interactive Dashboard
+Tableau Dashboard Link: https://public.tableau.com/app/profile/sanchal.sunil.dhurve/viz/Nintendo_Switch_Sales_Analysis/Dashboard1?publish=yes
