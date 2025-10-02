@@ -48,4 +48,5 @@ The goal is to understand how AI models capture customer sentiment compared to s
 - Experiment with preprocessing techniques to improve neutral sentiment detection  
 
 ## Interactive Dashboard
-Tableau Dashboard Link: https://public.tableau.com/app/profile/sanchal.sunil.dhurve/viz/Nintendo_Switch_Sales_Analysis/Dashboard1?publish=yes
+Tableau Dashboard Link: 
+https://public.tableau.com/app/profile/sanchal.sunil.dhurve/viz/Amazon_baby_Products_Review_Analysis/AmazonBabyProductsReviewsAnalysis
